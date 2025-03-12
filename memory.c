@@ -32,8 +32,16 @@ void write_int(int num) {
     }
 }
 
+/**
+ * @brief The main function of the program.
+ *
+ * This function reads an array size from the standard input, dynamically allocates memory for the array,
+ * reads integers from the standard input, and prints them to the standard output.
+ *
+ * @return 0 if the program runs successfully, 1 if an error occurs.
+ */
 int main() {
-    
+
     int size;
     write(STDOUT_FILENO, "Enter array size: ", 18);
     char size_buffer[20];
